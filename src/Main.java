@@ -62,6 +62,11 @@ public class Main {
     do {
       System.out.println("1 - Cadastrar ganho");
       System.out.println("2 - Sair");
+    System.out.print("3- Lista de ganhos:\n");
+    System.out.print("4- Remover ganho:\n");
+    System.out.print("5- Filtro por data:\n");
+
+    
       opcao = scanner.nextInt();
       scanner.nextLine(); // limpa a sobra do Enter
 
@@ -85,8 +90,67 @@ public class Main {
         case 2:
           System.out.println("Saindo do programa...");
           break;
+           case 3:
+          System.out.println("Lista de ganhos:");
+          for (Ganho ganho : ganhosList) {
+            System.out.println("ID: " + ganho.getId() + ", Valor: " + ganho.getValor() + ", Plataforma: "
+                + ganho.getPlataforma() + ", Data: " + ganho.getData());
+          }
+          break;
+          case 4:
+          System.out.println("Digite o ID do ganho que deseja remover:");
+          int idRemover = scanner.nextInt();
+          scanner.nextLine(); // limpa a sobra do Enter
+          if(ganhosList.removeIf(ganho -> ganho.getId() == idRemover)) {
+            System.out.println("Ganho removido com sucesso.");
+            // Reescreve o arquivo com os ganhos restantes
+            try (FileWriter filewriter = new FileWriter("ganhos.txt")) {
+              for (Ganho ganho : ganhosList) {
+                filewriter.write(ganho.getValor() + ";" + ganho.getPlataforma() + ";"
+                    + ganho.getData() + ";" + ganho.getId() + "\n");
+              }
+            }
+          } else {
+            System.out.println("Ganho com ID " + idRemover + " não encontrado.");
+          }
+          break;
+          case 5:
+          System.out.println("Digite a data inicial (YYYY-MM-DD):");
+          String dataInicialStr = scanner.nextLine();
+          System.out.println("Digite a data final (YYYY-MM-DD):");
+          String dataFinalStr = scanner.nextLine();
+          try {
+            double TotalPeriodo = 0;
+            boolean encontrouGanhos = false;
+            LocalDate dataInicial = LocalDate.parse(dataInicialStr);
+            LocalDate dataFinal = LocalDate.parse(dataFinalStr);
+            System.out.println("Ganhos entre " + dataInicial + " e " + dataFinal + ":");
+           for (Ganho ganho : ganhosList) {
+              if (!ganho.getData().isBefore(dataInicial) && !ganho.getData().isAfter(dataFinal)) {
+                System.out.println("ID: " + ganho.getId() + ", Valor: " + ganho.getValor() + ", Plataforma: "
+                    + ganho.getPlataforma() + ", Data: " + ganho.getData());
+                TotalPeriodo += ganho.getValor();
+                encontrouGanhos = true; }
+            
+              }
+              if (!encontrouGanhos) {
+                System.out.println("Nenhum ganho encontrado nesse período.");
+              }
+              else {
+                System.out.println("Total do período: " + TotalPeriodo);
+              }
+            
+           
+            }
+            catch (java.time.format.DateTimeParseException e) {
+              System.out.println("Formato de data inválido. Por favor, use o format YYYY-MM-DD.");
+              
+            }
+             
+          break;
         default:
           System.out.println("Opção inválida");
+         
       }
     } while (opcao != 2);
 
