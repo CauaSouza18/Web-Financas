@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8c69b3c-3ab0-4b91-967d-9962ef2e0498" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Ganho.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Ganho.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Usuario.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,23 +39,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0092907274931766" />
-      <entry key="MS500" value="1.4391572069261656" />
-      <entry key="S2" value="2.7531123257395786" />
-      <entry key="S5" value="3.820041627479438" />
-      <entry key="S10" value="4.661988593763791" />
-      <entry key="S30" value="7.071506953751871" />
-      <entry key="S60" value="9.415379962936191" />
-      <entry key="M2" value="12.96480843694606" />
-      <entry key="M5" value="18.969614715684656" />
-      <entry key="M10" value="23.50195566396932" />
-      <entry key="M15" value="25.718254822025283" />
-      <entry key="M30" value="28.48762381146882" />
-      <entry key="H1" value="30.13651895723952" />
-      <entry key="H2" value="31.039368277012294" />
-      <entry key="H4" value="31.512184083502074" />
-      <entry key="D1" value="31.91763121061528" />
-      <entry key="W1" value="31.98820659516951" />
+      <entry key="MS100" value="1.0000001704064791" />
+      <entry key="MS500" value="1.0704673445539028" />
+      <entry key="S2" value="1.8646429225961474" />
+      <entry key="S5" value="2.6984358283843717" />
+      <entry key="S10" value="4.243637411006903" />
+      <entry key="S30" value="9.701299720115976" />
+      <entry key="S60" value="14.388423867587388" />
+      <entry key="M2" value="19.795257210255606" />
+      <entry key="M5" value="27.586633261079406" />
+      <entry key="M10" value="33.05035452031748" />
+      <entry key="M15" value="35.6665674983925" />
+      <entry key="M30" value="38.90951966715527" />
+      <entry key="H1" value="40.831938521521494" />
+      <entry key="H2" value="41.88282966579746" />
+      <entry key="H4" value="42.43280264497887" />
+      <entry key="D1" value="42.90424204727611" />
+      <entry key="W1" value="42.986289905877705" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -74,23 +77,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.03039777893954692" />
-      <entry key="MS500" value="0.6012537257938559" />
-      <entry key="S2" value="2.159751025073134" />
-      <entry key="S5" value="3.4651322801671305" />
-      <entry key="S10" value="4.44260780840962" />
-      <entry key="S30" value="6.961919239529021" />
-      <entry key="S60" value="9.346682445538383" />
-      <entry key="M2" value="12.924351580053335" />
-      <entry key="M5" value="18.948989441804315" />
-      <entry key="M10" value="23.489007475166762" />
-      <entry key="M15" value="25.70859592651075" />
-      <entry key="M30" value="28.48209553096417" />
-      <entry key="H1" value="30.133534496589725" />
-      <entry key="H2" value="31.037814078634675" />
-      <entry key="H4" value="31.51139054493491" />
-      <entry key="D1" value="31.917496586179293" />
-      <entry key="W1" value="31.988187303979412" />
+      <entry key="MS100" value="4.7171338613069736E-4" />
+      <entry key="MS500" value="0.2593408313816648" />
+      <entry key="S2" value="1.4075815799338416" />
+      <entry key="S5" value="2.4415251499940465" />
+      <entry key="S10" value="4.067218295347723" />
+      <entry key="S30" value="9.579826981881839" />
+      <entry key="S60" value="14.29936177400902" />
+      <entry key="M2" value="19.73775232485323" />
+      <entry key="M5" value="27.55691326234472" />
+      <entry key="M10" value="33.0323874111309" />
+      <entry key="M15" value="35.65342936469735" />
+      <entry key="M30" value="38.90216945469555" />
+      <entry key="H1" value="40.82801809921313" />
+      <entry key="H2" value="41.880800508513204" />
+      <entry key="H4" value="42.431769777656434" />
+      <entry key="D1" value="42.90406726826543" />
+      <entry key="W1" value="42.98626487166429" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -102,33 +105,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Caua0/Downloads/App de Finanças",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.14941406",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Caua0/Downloads/App de Finanças&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.14941406&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="App de Finanças" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="App de Finanças" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="App de Finanças" />
       <method v="2">
